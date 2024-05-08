@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Paragraph with Hover Explanations</title>
+<style>
+  /* Define different colors for each sentence */
+  .sentence1 { color: blue; }
+  .sentence2 { color: red; }
+  .sentence3 { color: green; }
+  .sentence4 { color: orange; }
+  .sentence5 { color: purple; }
+
+  /* Set up hover effects to display explanations */
+  .explanation {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+  }
+  .sentence:hover .explanation {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<!-- Paragraph with different colored sentences -->
+<p>
+  <span class="sentence sentence1">This is sentence 1.</span>
+  <span class="sentence sentence2">This is sentence 2.</span>
+  <span class="sentence sentence3">This is sentence 3.</span>
+  <span class="sentence sentence4">This is sentence 4.</span>
+  <span class="sentence sentence5">This is sentence 5.</span>
+</p>
+
+<!-- Explanations for each sentence -->
+<div class="explanation">This sentence introduces the topic.</div>
+<div class="explanation">This sentence provides background information.</div>
+<div class="explanation">This sentence presents a key point or argument.</div>
+<div class="explanation">This sentence offers supporting evidence.</div>
+<div class="explanation">This sentence concludes the paragraph.</div>
+
+</body>
+</html>
